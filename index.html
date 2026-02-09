@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinas Perpustakaan dan Kearsipan Kota Tarakan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" >
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="top-wrapper">
+    <header class="header">
+        <div class="logo-area">
+            <img src="logotarakan.png" alt="Logo Kota Tarakan">
+            <span>Dinas Perpustakaan dan Kearsipan<br>Kota Tarakan</span>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/dispuspan" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/disarpusda_tarakan" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@dinasperpustakaandankearsi1168" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube"></i></a>
+        </div>
+    </header>    
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul id="navMenu">
+            <li class="active"><a href="#" data-target="beranda">Beranda</a></li>
+            <li><a href="#" data-target="profil">Profil</a></li>
+            <li><a href="#" data-target="layanan">Layanan</a></li>
+            <li><a href="#" data-target="fasilitas">Fasilitas</a></li>
+            <li><a href="#" data-target="data">Data & Statistik</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- CONTENT ACTIVE SECTION -->
+<section class="content active" id="beranda">
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Dinas Perpustakaan dan Kearsipan <br> Kota Tarakan</h1>
+        </div>
+        <div class="hero-image">
+            <div class="hero-bg"></div>
+            <div class="hero-img-wrap">
+                <img src="perpus.jpeg" alt="Gedung Perpustakaan">
+            </div>
+            <div class="hero-img">
+                <img src="perpus.png" alt="Gedung Perpustakaan">
+            </div>
+        </div>
+    </section>
+    <a href="#maps" class="info">
+        <i class="fas fa-arrow-down"></i>
+        <span>Lokasi & Jam Operasional</span>
+    </a>
+    <section class="beranda-map" id="maps">
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.205259511935!2d117.6203238!3d3.299304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32138a3ff0559127%3A0xc51743ae5d7dd88b!2sPerpustakaan%20Daerah%20Tarakan!5e0!3m2!1sid!2sid!4v1768652295767!5m2!1sid!2sid" 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="location">
+            <p> Lokasi:</p>
+            <div class="loc-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Jl. Sei Sesayap, Kompleks Islamic Center, Kel. Kampung 4, Kec. Tarakan Timur, Tarakan, Kalimantan Utara</span>
+            </div>
+            <p> Jam Operasional:</p>
+            <div class="loc-item">
+                <i class="fas fa-clock"></i>
+                <span>Senin - Kamis (07.30 - 16.15)<br>Jumat (07.30 - 16.00)</span>
+            </div>
+        </div>
+    </section>
+</section>
+
+<!-- CONTENT SECTION -->
+<!-- CONTENT LAYANAN -->
+<section class="content" id="profil">
+    <h2 class="section-title">Profil</h2>
+    <div class="profil-video">
+        <div class="video-wrapper">
+            <iframe 
+                src="Profil Pepus.mp4" type="video/mp4"
+                title="Video Profil Perpustakaan Daerah Kota Tarakan"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <p class="video-caption">
+            Video Profil Perpustakaan Daerah Kota Tarakan
+        </p>
+    </div>
+    <div class="profil-cards">
+        <div class="profil-card" onclick="openModal('sejarah')">
+            <i class="fas fa-hourglass-half"></i>
+            <h4>Sejarah</h4>
+        </div>
+        <div class="profil-card" onclick="openModal('identitas')">
+            <i class="fas fa-file-alt"></i>
+            <h4>Identitas<br>Perpustakaan</h4>
+        </div>
+        <div class="profil-card" onclick="openModal('visi')">
+            <i class="fas fa-handshake"></i>
+            <h4>Visi Misi</h4>
+        </div>
+    </div>
+
+        <!-- MODAL -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <!-- SEJARAH -->
+            <div class="modal-body" id="sejarah">
+                <div class="modal-body-row">
+                    <span class="lokasi">
+                        <i class="fas fa-hourglass-half"></i>
+                        Sejarah
+                    </span>
+                </div>
+                <p>
+                Perpustakaan Daerah Kependayan Kota Tarakan berdiri pada
+                tahun 2000 dan diperkuat secara kelembagaan melalui
+                Peraturan Daerah Kota Tarakan Nomor 04 Tahun 2004.
+                Sebagai bagian dari Dinas Perpustakaan dan Kearsipan Kota Tarakan.
+                Berlokasi di Jalan Sei Sayap, Kompleks Islamic Center, Tarakan Timur.
+                </p>
+            </div>
+            <!-- IDENTITAS -->
+            <div class="modal-body" id="identitas">
+                <div class="modal-body-row">
+                    <span class="lokasi">
+                        <i class="fas fa-file-alt"></i>
+                        Identitas Perpustakaan
+                    </span>    
+                </div>
+                <ul>
+                    <li>Nama: Perpustakaan Daerah Kependayan Kota Tarakan</li>
+                    <li>Instansi Induk: Dinas Perpustakaan dan Kearsipan</li>
+                    <li>Status: Dinas</li>
+                    <li>Tahun Berdiri: 2000</li>
+                    <li>SK: Perda Kota Tarakan No.04/2004</li>
+                    <li>Kepala Dinas: Drs. Alex Sandra Hasan Maukar, M.Si</li>
+                </ul>
+            </div>
+            <!-- VISI MISI -->
+            <div class="modal-body" id="visi">
+                <div class="modal-body-row">
+                    <span class="lokasi">
+                        <i class="fas fa-handshake"></i>
+                        Visi Misi
+                    </span>    
+                </div>
+
+                <h4>Visi:</h4>
+                <p>
+                Terwujudnya Tarakan sebagai Kota Maju dan Sejahtera melalui Smart City
+                </p>
+                <h4>Misi:</h4>
+                <p>
+                Meningkatkan sumber daya manusia yang terampil, mandiri, berkualitas dan berdaya saing
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- STRUKTUR -->
+    <div class="profil-struktur">
+        <h3>Struktur Organisasi Dinas Perpustakaan dan Kearsipan Kota Tarakan</h3>
+        <img src="struktur.jpeg" alt="Struktur Organisasi">
+    </div>
+</section>
+
+<!-- CONTENT LAYANAN -->
+<section class="content" id="layanan">
+    <h2 class="section-title">Layanan</h2>
+    <!-- KARTU LAYANAN -->
+    <div class="layanan-cards">
+        <div class="layanan-card">
+            <img src="buatkartu.jpeg" alt="Pembuatan Kartu Anggota">
+            <div class="layanan-info">
+                <h4>Pembuatan Kartu Anggota</h4>
+                <div class="layanan-info-row">
+                    <span class="lokasi">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Front Office (Lantai 1)
+                    </span>
+                    <a href="https://dispuspan.tarakankota.go.id/layanan-perpustakaan/" class="next">
+                    Selanjutnya..    
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="layanan-card">
+            <img src="pinjam.jpeg" alt="Peminjaman Buku">
+            <div class="layanan-info">
+                <h4>Peminjaman, Pengembalian & Perpanjangan Buku</h4>
+                <div class="layanan-info-row">
+                    <span class="lokasi">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Front Office (Lantai 2)
+                    </span>
+                    <a href="https://dispuspan.tarakankota.go.id/layanan-sirkulasi/" class="next">
+                    Selanjutnya..
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="layanan-card">
+            <img src="dongeng.jpeg" alt="Layanan Bercerita">
+            <div class="layanan-info">
+                <h4>Layanan Bercerita</h4>
+                <div class="layanan-info-row">
+                <span class="lokasi">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Lantai 1
+                </span>
+                <a href="https://dispuspan.tarakankota.go.id/layanan-mendongeng/" class="next">
+                Selanjutnya..
+                </a>
+                </div>
+            </div>
+        </div>
+        <div class="layanan-card">
+            <img src="pusling.jpeg" alt="Perpustakaan Keliling">
+            <div class="layanan-info">
+                <h4>Perpustakaan Keliling</h4>
+                <div class="layanan-info-row">
+                    <span class="lokasi">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Menyesuaikan
+                    </span>
+                    <a href="https://dispuspan.tarakankota.go.id/layanan-perpustakaan-keliling/" class="next">
+                    Selanjutnya..
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- VIDEO TUTORIAL -->
+    <div class="layanan-video">
+        <div class="video-wrapper">
+            <iframe
+                src="https://www.youtube.com/embed/VIDEO_ID"
+                title="Video Tutorial Peminjaman dan Pengembalian Buku"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <p class="video-caption">
+            Video Tutorial Peminjaman dan Pengembalian Buku
+        </p>
+    </div>
+</section>
+
+<!-- CONTENT FASILITAS -->
+<section class="content" id="fasilitas">
+  <h2>Fasilitas</h2>
+  <div class="fasilitas-container">
+    <!-- Tempat Baca -->
+    <div class="fasilitas-box">
+      <h3>Tempat Baca</h3>
+      <div class="fasilitas-grid">
+        <div class="card single">
+          <img src="tempatbaca1.jpeg" alt="Tempat Baca 1">
+          <p>Lantai 1</p>
+        </div>
+        <div class="card single">
+          <img src="tempatbaca2.jpeg" alt="Tempat Baca 2">
+          <p>Lantai 2</p>
+        </div>
+        <div class="card single">
+          <img src="tempatbaca3.jpeg" alt="Tempat Baca 3">
+          <p>Lantai 2</p>
+        </div>
+      </div>
+    </div>
+    <div class="fasilitas-row">
+        <!-- OPAC -->
+        <div class="fasilitas-box2">
+        <h3>Komputer Khusus OPAC</h3>
+        <div class="card single">
+            <img src="opac.jpeg" alt="OPAC">
+            <p>Lantai 2</p>
+        </div>
+        </div>
+        <!-- Ruang Anak -->
+        <div class="fasilitas-box2">
+        <h3>Ruang Bermain Anak</h3>
+        <div class="card single">
+            <img src="ruanganak.jpeg" alt="Ruang Anak">
+            <p>Lantai 1</p>
+        </div>
+        </div>
+    </div>
+    <div class="fasilitas-box">         
+        <div class="fasilitas-grid">
+            <div class="card single">
+               <h3>Ruang Komputer</h3> 
+            <img src="ruang_komputer.jpeg" alt="Ruang Komputer">
+            <p>Lantai 2</p>
+            </div>
+            <div class="card single">
+                <h3>Panggung Boneka</h3>
+            <img src="panggung.jpeg" alt="Panggung Boneka">
+            <p>Lantai 1</p>
+            </div>
+            <div class="card single">
+                <h3>Wifi Gratis</h3>
+            <img src="wifi.jpeg" alt="Free Wifi">
+            <p>Lantai 1 & 2</p>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT DATA DAN STATISTIK -->
+<section class="content" id="data">
+  <h2>Data dan Statistik</h2>
+  <!-- Box Pengunjung -->
+  <div class="data-box">
+    <h3>Data Pengunjung Perpustakaan Tahun 2025</h3>
+    <div class="chart-container">
+      <canvas id="chartPengunjung"></canvas>
+    </div>
+  </div>
+  <!-- Box Sirkulasi -->
+  <div class="data-box">
+    <h3>Data Sirkulasi Buku Tahun 2025</h3>
+    <div class="chart-container">
+      <canvas id="chartBuku"></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-left">
+    © Perpustakaan Daerah Kota Tarakan 2026
+  </div>
+  <div class="footer-right">
+    Email: disarpusda.trk@gmail.com <br>
+    Website: www.disarpusda.tarakan.go.id
+  </div>
+</footer>
+
+<!-- JAVA SCRIPT -->
+<script>
+const navLinks = document.querySelectorAll('.navbar a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // scroll ke atas
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+
+        // ambil target konten
+        const targetId = this.dataset.target;
+        const contents = document.querySelectorAll('.content');
+
+        // sembunyikan semua konten
+        contents.forEach(c => c.classList.remove('active'));
+
+        // tampilkan konten yang dipilih
+        document.getElementById(targetId).classList.add('active');
+
+        // aktifkan menu navbar
+        document.querySelectorAll('.navbar li').forEach(li => li.classList.remove('active'));
+        this.parentElement.classList.add('active');
+    });
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+const links = document.querySelectorAll(".navbar a");
+const sections = document.querySelectorAll(".content");
+
+links.forEach(link => {
+    link.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const targetId = this.dataset.target;
+        const targetSection = document.getElementById(targetId);
+        if (!targetSection) return;
+        // sembunyikan semua section utama
+        sections.forEach(section => {
+            section.classList.remove("active");
+        });
+        // hapus active di navbar
+        links.forEach(l => {
+            l.parentElement.classList.remove("active");
+        });
+        // tampilkan section target
+        targetSection.classList.add("active");
+        this.parentElement.classList.add("active");
+    });
+});
+function openModal(type){
+    // Tampilkan modal
+    document.getElementById("modal").style.display = "flex";
+    // Sembunyikan semua isi
+    let contents = document.querySelectorAll(".modal-body");
+    contents.forEach(function(item){
+        item.style.display = "none";
+    });
+    // Tampilkan sesuai yang diklik
+    document.getElementById(type).style.display = "block";
+}
+function closeModal(){
+    document.getElementById("modal").style.display = "none";
+}
+</script>
+
+<script>
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    // paksa ke atas
+    window.scrollTo(0, 0);
+
+    const links = document.querySelectorAll(".navbar a");
+    const sections = document.querySelectorAll(".content");
+
+    // reset section
+    sections.forEach(section => {
+        section.classList.remove("active");
+    });
+
+    // reset navbar
+    links.forEach(link => {
+        link.parentElement.classList.remove("active");
+    });
+
+    // aktifkan beranda
+    const beranda = document.getElementById("beranda");
+    if (beranda) beranda.classList.add("active");
+
+    // aktifkan navbar beranda
+    const berandaLink = document.querySelector('.navbar a[data-target="beranda"]');
+    if (berandaLink) berandaLink.parentElement.classList.add("active");
+
+});
+</script>
+<script>
+
+// Grafik Pengunjung
+const ctx1 = document.getElementById('chartPengunjung');
+
+new Chart(ctx1, {
+  type: 'bar',
+  data: {
+    labels: [
+      'Jan','Feb','Mar','Apr','Mei','Jun',
+      'Jul','Agu','Sep','Okt','Nov','Des'
+    ],
+    datasets: [{
+      label: 'Jumlah Pengunjung 2025',
+      data: [
+        720, 1772, 672, 1710, 1021, 861,
+        1304, 1950, 2145, 2627, 1891, 1342
+      ],
+      backgroundColor: '#8A817C'
+    }]
+  },
+
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: true
+      }
+    }
+  }
+});
+
+// Grafik Sirkulasi Buku
+const ctx2 = document.getElementById('chartBuku');
+
+new Chart(ctx2, {
+  type: 'bar',
+  data: {
+    labels: [
+      'Jan','Feb','Mar','Apr','Mei','Jun',
+      'Jul','Agu','Sep','Okt','Nov','Des'
+    ],
+
+    datasets: [
+      {
+        label: 'Buku Keluar',
+        data: [
+          80,120,75,50,90,140,
+          260,210,180,230,190,210
+        ],
+        backgroundColor: '#8A817C'
+      },
+
+      {
+        label: 'Buku Masuk',
+        data: [
+          60,90,54,30,65,95,
+          230,190,150,200,170,160
+        ],
+        backgroundColor: '#BCB8B1'
+      }
+    ]
+  },
+
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: true
+      }
+    }
+  }
+});
+
+</script>
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+/* Klik Hamburger */
+menuToggle.addEventListener("click", function () {
+    navMenu.classList.toggle("active");
+    this.classList.toggle("active"); // tambahkan ini
+});
+
+/* Tutup sidebar setelah klik menu */
+document.querySelectorAll(".navbar a").forEach(link => {
+    link.addEventListener("click", function () {
+        navMenu.classList.remove("active");
+        menuToggle.classList.remove("active"); // reset warna
+    });
+});
+</script>
+
+</body>
+</html>
